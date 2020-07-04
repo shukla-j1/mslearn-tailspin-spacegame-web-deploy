@@ -1,6 +1,12 @@
 trigger:
 - '*'
 
+stages:
+- stage: 'Build'
+  displayName: 'Build the web application'
+  jobs: 
+  - job: 'Build'
+
 pool:
   vmImage: 'ubuntu-18.04'
   demands:
